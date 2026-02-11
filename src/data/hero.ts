@@ -1,7 +1,7 @@
 import type { HeroSection } from '../types';
 
 export const heroData: HeroSection = {
-  name: 'MD Rizabul',
+  name: 'Md Rizabul',
   tagline: 'Developer / Engineer / Problem Solver',
   bio: [
     'I am a software developer passionate about building elegant solutions to complex problems.',

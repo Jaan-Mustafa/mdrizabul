@@ -37,7 +37,7 @@ const Header = () => {
       <div className="container">
         <div className="header__content">
           <Link to="/" className="header__logo">
-            <span className="header__name">MD Rizabul</span>
+            <span className="header__name">Md Rizabul</span>
           </Link>
 
           <nav className={`header__nav ${isMobileMenuOpen ? 'header__nav--open' : ''}`}>
