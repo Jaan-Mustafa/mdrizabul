@@ -12,8 +12,8 @@ dist
 dist-ssr
 *.local
 
-docs/
-node_modules/
+# GitHub Pages deployment cache
+.gh-pages-cache
 
 # Editor directories and files
 .vscode/*
