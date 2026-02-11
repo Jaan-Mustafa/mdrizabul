@@ -1,6 +1,7 @@
 /* Global Styles */
 @import './variables.css';
 @import './typography.css';
+@import './pages.css';
 
 /* CSS Reset */
 *, *::before, *::after {

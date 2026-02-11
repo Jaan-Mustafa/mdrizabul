@@ -1,13 +1,11 @@
 import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 
-interface HeaderProps {
-  activeSection?: string;
-}
-
-const Header = ({ activeSection = 'home' }: HeaderProps) => {
+const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,41 +17,40 @@ const Header = ({ activeSection = 'home' }: HeaderProps) => {
   }, []);
 
   const navItems = [
-    { id: 'home', label: 'Home', href: '#home' },
-    { id: 'experience', label: 'Experience', href: '#experience' },
-    { id: 'projects', label: 'Projects', href: '#projects' },
-    { id: 'blog', label: 'Blog', href: '#blog' },
-    { id: 'contact', label: 'Contact', href: '#contact' }
+    { id: 'home', label: 'Home', path: '/' },
+    { id: 'experience', label: 'Experience', path: '/experience' },
+    { id: 'projects', label: 'Projects', path: '/projects' },
+    { id: 'blog', label: 'Blog', path: '/blog' },
+    { id: 'contact', label: 'Contact', path: '/contact' }
   ];
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMobileMenuOpen(false);
-    }
+  const handleNavClick = () => {
+    setIsMobileMenuOpen(false);
+  };
+
+  const isActive = (path: string) => {
+    return location.pathname === path;
   };
 
   return (
     <header className={`header ${isScrolled ? 'header--scrolled' : ''}`}>
       <div className="container">
         <div className="header__content">
-          <a href="#home" className="header__logo" onClick={(e) => handleNavClick(e, '#home')}>
+          <Link to="/" className="header__logo">
             <span className="header__name">MD Rizabul</span>
-          </a>
+          </Link>
 
           <nav className={`header__nav ${isMobileMenuOpen ? 'header__nav--open' : ''}`}>
             <ul className="header__nav-list">
               {navItems.map((item) => (
                 <li key={item.id} className="header__nav-item">
-                  <a
-                    href={item.href}
-                    className={`header__nav-link ${activeSection === item.id ? 'header__nav-link--active' : ''}`}
-                    onClick={(e) => handleNavClick(e, item.href)}
+                  <Link
+                    to={item.path}
+                    className={`header__nav-link ${isActive(item.path) ? 'header__nav-link--active' : ''}`}
+                    onClick={handleNavClick}
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

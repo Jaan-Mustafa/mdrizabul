@@ -77,13 +77,15 @@
   justify-content: center;
   flex-shrink: 0;
   overflow: hidden;
+  background-color: transparent;
+  border: 1px solid var(--color-border);
 }
 
 .timeline__logo img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: var(--space-sm);
+  padding: var(--space-xs);
 }
 
 .timeline__logo-text {

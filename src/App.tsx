@@ -1,20 +1,25 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout';
-import Hero from './components/sections/Hero';
-import Experience from './components/sections/Experience';
-import Projects from './components/sections/Projects';
-import Blog from './components/sections/Blog';
-import Contact from './components/sections/Contact';
+import Home from './pages/Home';
+import ExperiencePage from './pages/ExperiencePage';
+import ProjectsPage from './pages/ProjectsPage';
+import BlogPage from './pages/BlogPage';
+import ContactPage from './pages/ContactPage';
 import './App.css';
 
 function App() {
   return (
-    <Layout>
-      <Hero />
-      <Experience />
-      <Projects />
-      <Blog />
-      <Contact />
-    </Layout>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/experience" element={<ExperiencePage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
 
