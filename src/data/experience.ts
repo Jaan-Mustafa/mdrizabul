@@ -3,52 +3,60 @@ import type { Experience } from '../types';
 export const experiences: Experience[] = [
   {
     id: 'exp-1',
-    company: 'Tech Company',
-    role: 'Senior Software Engineer',
-    period: '2023 - Present',
-    logo: '/logos/company1.png',
+    company: 'Clear',
+    role: 'SDE Intern',
+    period: 'January 2026 - Present',
+    logo: '/clearofficial_logo.jpeg',
     logoColor: '#4285F4',
     description: [
-      'Leading development of scalable web applications using React and Node.js.',
-      'Architecting microservices infrastructure and implementing CI/CD pipelines.',
-      'Mentoring junior developers and conducting code reviews to maintain high code quality standards.'
-    ],
-    links: [
-      { text: 'Company Website', url: 'https://example.com' }
+      'Engineered a self-healing CI/CD pipeline using GitHub Actions to automatically detect, analyze, and recover from flaky test and deployment failures by leveraging AI-driven root-cause analysis with RAG pipelines, vector databases, and LLM agents.',
+      'Developed automation workflows with JavaScript and Playwright to auto-rerun, debug, and remediate failing test cases, reducing overall pipeline failure rate by 40% and significantly improving release reliability across services.'
     ],
     highlights: [
-      'Improved application performance by 40%',
-      'Led team of 5 developers',
-      'Implemented automated testing suite'
+      'Reduced pipeline failure rate by 40%',
+      'Implemented AI-driven root-cause analysis',
+      'Built self-healing automation workflows'
     ]
   },
   {
     id: 'exp-2',
-    company: 'Startup Inc',
-    role: 'Full Stack Developer',
-    period: '2021 - 2023',
-    logo: '/logos/company2.png',
+    company: 'ensuredit',
+    role: 'SDE Intern',
+    period: 'May 2025 - July 2025',
+    logo: '/ensureditoff_logo.jpeg',
     logoColor: '#EA4335',
     description: [
-      'Built and maintained full-stack applications using React, TypeScript, and Python.',
-      'Collaborated with design team to implement pixel-perfect UI components.',
-      'Optimized database queries and improved API response times by 60%.'
+      'Constructed and optimized 10+ backend APIs for leading clients like Chubb, IndMoney, Spinny, and PayU using NestJS, delivering end-to-end insurance workflows and modernizing legacy code for better scalability.',
+      'Debugged complex backend logic to resolve critical client issues, improving API response speed by 40% and ensuring smooth policy processing.',
+      'Reduced support tickets by 60% for 5,000+ users by engineering and deploying an AI-powered Insurance chatbot utilizing OpenAI, LangGraph, and a RAG pipeline with ChromaDB and PostgreSQL.'
     ],
-    links: [
-      { text: 'Product Launch', url: 'https://example.com/launch' }
+    highlights: [
+      'Built 10+ backend APIs for major clients',
+      'Improved API response speed by 40%',
+      'Reduced support tickets by 60% for 5,000+ users'
     ]
   },
   {
     id: 'exp-3',
-    company: 'Digital Agency',
-    role: 'Frontend Developer',
-    period: '2019 - 2021',
-    logo: '/logos/company3.png',
+    company: 'Microsoft for Startups',
+    role: 'Microsoft Founders Hub Member',
+    period: 'April 2024 - May 2025',
+    logo: '/microsoftforstartups_logo.jpeg',
+    logoColor: '#00A4EF',
+    description: [
+      'Our startup got selected in Microsoft Founder Hub, gaining access to Azure credits, technical support, and mentorship from Microsoft experts.'
+    ]
+  },
+  {
+    id: 'exp-4',
+    company: 'Bharat Saarthi',
+    role: 'Full-stack Developer',
+    period: 'April 2024 - May 2025',
+    logo: '/1714496853077.jpeg',
     logoColor: '#34A853',
     description: [
-      'Developed responsive websites and web applications for various clients.',
-      'Implemented modern frontend frameworks and best practices.',
-      'Worked closely with clients to understand requirements and deliver solutions.'
+      'Built a Web Application for Bharat Saarthi using modern full-stack technologies.',
+      'Tech stack used: ReactJS and ExpressJS for building scalable and performant web solutions.'
     ]
   }
 ];

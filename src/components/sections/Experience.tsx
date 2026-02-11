@@ -18,10 +18,7 @@ const Experience = () => {
 
               <div className="timeline__content">
                 <div className="timeline__header">
-                  <div
-                    className="timeline__logo"
-                    style={{ backgroundColor: exp.logoColor || '#4285F4' }}
-                  >
+                  <div className="timeline__logo">
                     {exp.logo ? (
                       <img src={exp.logo} alt={exp.company} />
                     ) : (
