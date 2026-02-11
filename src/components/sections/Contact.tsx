@@ -15,12 +15,22 @@ const Contact = () => {
 
           <div className="contact__methods">
             <div className="contact__method">
-              <h3 className="contact__method-title">Email</h3>
+              <h3 className="contact__method-title">Personal Email</h3>
               <a
                 href={`mailto:${contactData.email}`}
                 className="contact__email"
               >
                 {contactData.email}
+              </a>
+            </div>
+
+            <div className="contact__method">
+              <h3 className="contact__method-title">Professional Email</h3>
+              <a
+                href="mailto:rizabul.md@clear.in"
+                className="contact__email"
+              >
+                rizabul.md@clear.in
               </a>
             </div>
 

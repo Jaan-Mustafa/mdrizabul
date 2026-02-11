@@ -10,8 +10,8 @@ export const heroData: HeroSection = {
   ],
   profileImage: '/riz.png',
   socialLinks: [
-    { platform: 'GitHub', url: 'https://github.com/yourusername' },
-    { platform: 'LinkedIn', url: 'https://linkedin.com/in/yourusername' },
-    { platform: 'Twitter', url: 'https://twitter.com/yourusername' }
+    { platform: 'GitHub', url: 'https://github.com/JaanMustafa' },
+    { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/md-rizabul/' },
+    { platform: 'Twitter', url: 'https://x.com/Jaan_Mustafa_' }
   ]
 };
