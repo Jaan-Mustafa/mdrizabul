@@ -8,7 +8,7 @@ export const heroData: HeroSection = {
     'I specialize in full-stack development, with expertise in modern web technologies and a focus on creating performant, user-centric applications.',
     'When I\'m not coding, I enjoy exploring new technologies, contributing to open source, and sharing knowledge through writing and mentoring.'
   ],
-  profileImage: '/profile.jpg', // Add your profile image to public folder
+  profileImage: '/src/assets/riz.png',
   socialLinks: [
     { platform: 'GitHub', url: 'https://github.com/yourusername' },
     { platform: 'LinkedIn', url: 'https://linkedin.com/in/yourusername' },

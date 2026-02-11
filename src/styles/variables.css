@@ -70,7 +70,9 @@
   --radius-full: 9999px;
 }
 
-/* Dark mode support (optional for future) */
+/* Dark mode support disabled - always use light theme */
+/* Uncomment below to enable automatic dark mode based on system preference */
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --color-text-primary: #f5f5f5;
@@ -81,3 +83,4 @@
     --color-card-bg: #151515;
   }
 }
+*/
