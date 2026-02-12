@@ -2,11 +2,11 @@ import type { HeroSection } from '../types';
 
 export const heroData: HeroSection = {
   name: 'Md Rizabul',
-  tagline: 'Developer / Engineer / Problem Solver',
+  tagline: 'Software Developer | Competitive Programmer | Codeforces Expert',
   bio: [
-    'I am a software developer passionate about building elegant solutions to complex problems.',
-    'I specialize in full-stack development, with expertise in modern web technologies and a focus on creating performant, user-centric applications.',
-    'When I\'m not coding, I enjoy exploring new technologies, contributing to open source, and sharing knowledge through writing and mentoring.'
+    'Final year student at Delhi Technological University, currently working as an SDE Intern at ClearTax, Bengaluru.',
+    'Passionate about building scalable systems and solving complex problems. Achieved Expert rating on Codeforces and Knight status on LeetCode through dedicated competitive programming.',
+    'Love reading finance and tech books, exploring new technologies, and working on challenging projects that make an impact.'
   ],
   profileImage: '/riz.png',
   socialLinks: [

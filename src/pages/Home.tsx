@@ -12,69 +12,74 @@ const Home = () => {
           <div className="home-content__section">
             <h2>About Me</h2>
             <p>
-              I'm a passionate software developer with a strong foundation in full-stack development. 
-              My journey in technology began with a curiosity about how things work, which evolved into 
-              a career dedicated to building innovative solutions that make a difference.
+              I'm a final year student at Delhi Technological University, currently working as an SDE Intern
+              at ClearTax, Bengaluru. My tech journey has been diverse and enriching—from exploring investing
+              and options trading in my first year to diving deep into development and problem-solving.
             </p>
             <p>
-              Over the years, I've worked on diverse projects ranging from web applications to complex 
-              backend systems. I believe in writing clean, maintainable code and following best practices 
-              that ensure scalability and performance.
+              In my third year, I committed to competitive programming and data structures, achieving
+              <strong> Expert rating on Codeforces</strong> and <strong>Knight status on LeetCode</strong>.
+              Previously, I also interned as an SDE at Ensuredit, Gurugram, where I honed my full-stack
+              development skills.
             </p>
           </div>
 
           <div className="home-content__section">
             <h2>What I Do</h2>
             <p>
-              I specialize in modern web technologies including React, TypeScript, Node.js, and various 
-              cloud platforms. My approach combines technical expertise with a deep understanding of user 
-              needs, ensuring that every solution I build is both powerful and user-friendly.
+              I work on full-stack development with modern web technologies, building scalable and performant
+              applications. My strong foundation in data structures, algorithms, and competitive programming
+              enables me to write efficient, optimized code and tackle complex technical challenges.
             </p>
             <p>
-              Whether it's architecting scalable systems, optimizing performance, or crafting intuitive 
-              user interfaces, I bring dedication and attention to detail to every project. I'm constantly 
-              learning and adapting to new technologies to stay at the forefront of the industry.
+              At ClearTax, I contribute to building systems that serve millions of users, focusing on
+              creating robust solutions that scale. I'm passionate about writing clean, maintainable code
+              and continuously learning new technologies to solve real-world problems effectively.
             </p>
           </div>
 
           <div className="home-content__section">
-            <h2>My Philosophy</h2>
+            <h2>My Journey</h2>
             <p>
-              I believe that great software is built on three pillars: solid engineering principles, 
-              user-centric design, and continuous improvement. Code should be elegant, systems should 
-              be reliable, and products should delight users.
+              My tech journey started in my first year with learning about investing, options trading,
+              and basic coding. In my second year, I focused on development and strengthening my DSA
+              fundamentals. The real transformation happened in my third year when I went all-in on
+              competitive programming.
             </p>
             <p>
-              Collaboration is key to success. I thrive in environments where ideas are shared freely, 
-              feedback is constructive, and everyone is committed to excellence. I'm always eager to 
-              learn from others and share my knowledge with the community.
+              Through consistent practice and dedication, I achieved Expert rating on Codeforces and
+              Knight status on LeetCode. This journey taught me problem-solving, algorithmic thinking,
+              and the importance of perseverance—skills that translate directly to building better software.
             </p>
           </div>
 
           <div className="home-content__section">
             <h2>Beyond Code</h2>
             <p>
-              When I'm not coding, I enjoy exploring new technologies through side projects, contributing 
-              to open source, and staying active in the developer community. I believe in giving back and 
-              helping others grow in their careers.
+              When I'm not coding, you'll find me immersed in books—especially those on finance and technology.
+              Reading helps me stay curious and informed about industry trends, financial markets, and emerging
+              technologies that shape our world.
             </p>
             <p>
-              I'm also passionate about mentoring aspiring developers and sharing insights through writing. 
-              Technology is constantly evolving, and I find joy in both learning and teaching as we navigate 
-              this ever-changing landscape together.
+              I aspire to build a career in tech working at scale, solving problems that impact millions of users.
+              I'm constantly learning, experimenting with new technologies, and seeking opportunities to grow as
+              an engineer while contributing to meaningful projects.
             </p>
           </div>
 
           <div className="home-content__section">
             <h2>Let's Connect</h2>
             <p>
-              I'm always interested in hearing about new opportunities, collaborations, or just having a 
-              conversation about technology. Whether you have a project in mind, want to discuss ideas, 
-              or simply want to connect, feel free to reach out.
+              I'm always open to discussing new opportunities, tech trends, competitive programming, or
+              interesting projects. Whether you want to talk about algorithms, system design, full-stack
+              development, or just connect over shared interests, feel free to reach out.
             </p>
             <p>
-              You can find me on various platforms or send me an email at {heroData.socialLinks[0]?.platform}. 
-              I look forward to connecting with you!
+              You can find me on {heroData.socialLinks.map((link, i) =>
+                i === heroData.socialLinks.length - 1 ? `or ${link.platform}` :
+                i === heroData.socialLinks.length - 2 ? link.platform + ' ' :
+                link.platform + ', '
+              ).join('')}. Let's connect and build something amazing together!
             </p>
           </div>
         </div>
