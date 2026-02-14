@@ -19,7 +19,7 @@ const Header = () => {
   const navItems = [
     { id: 'home', label: 'Home', path: '/' },
     { id: 'experience', label: 'Experience', path: '/experience' },
-    { id: 'projects', label: 'Projects', path: '/projects' },
+    { id: 'projects', label: 'My Projects', path: '/projects' },
     { id: 'blog', label: 'Blog', path: '/blog' },
     { id: 'contact', label: 'Contact', path: '/contact' }
   ];
@@ -37,7 +37,7 @@ const Header = () => {
       <div className="container">
         <div className="header__content">
           <Link to="/" className="header__logo">
-            <span className="header__name">MD Rizabul</span>
+            <span className="header__name">Md Rizabul</span>
           </Link>
 
           <nav className={`header__nav ${isMobileMenuOpen ? 'header__nav--open' : ''}`}>

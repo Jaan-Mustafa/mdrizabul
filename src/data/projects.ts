@@ -3,70 +3,32 @@ import type { Project } from '../types';
 export const projects: Project[] = [
   {
     id: 'proj-1',
-    title: 'E-Commerce Platform',
-    description: 'A full-featured e-commerce platform built with React, Node.js, and MongoDB. Includes user authentication, product management, shopping cart, and payment integration.',
-    tags: ['React', 'Node.js', 'MongoDB', 'Stripe', 'TypeScript'],
-    image: '/projects/ecommerce.jpg',
+    title: 'TNP Portal',
+    description: 'Architected a Full-stack Campus Placement Management System using NextJs, NestJs, and PostgreSQL with JSON Web Token (JWT) authentication and role-based access control. Engineered automated eligibility checks based on academic data, helping the placement cell manage 500+ student applications with 70% less manual effort. Crafted intuitive dashboards for students and admins with status tracking, resume uploads, and analytics—improving application tracking efficiency by 80%.',
+    tags: ['NextJS', 'NestJS', 'TypeScript', 'PostgreSQL', 'JWT'],
     links: {
-      github: 'https://github.com/yourusername/ecommerce',
-      demo: 'https://ecommerce-demo.com'
+      github: 'https://github.com/Jaan-Mustafa/TNP-Portal'
     },
     featured: true
   },
   {
     id: 'proj-2',
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-    tags: ['React', 'Firebase', 'Material-UI', 'WebSocket'],
-    image: '/projects/taskapp.jpg',
+    title: 'Stock Exchange',
+    description: 'Designed and implemented a real-time Stock Exchange platform using Next.js, TypeScript, Express, TimescaleDB, Redis, and WebSocket, following a microservices architecture for scalability and maintainability. Developed high-performance, in-memory systems for orderbook management, user balances, and trade matching, leveraging Redis Pub/Sub and Node.js to ensure instant updates and low-latency trading operations. Integrated TimescaleDB and WebSocket for time-series analytics and real-time candlestick charting, delivering seamless, responsive market data and trading experiences to users.',
+    tags: ['NextJS', 'Express', 'TypeScript', 'TimescaleDB', 'Redis', 'WebSocket'],
     links: {
-      github: 'https://github.com/yourusername/taskapp',
-      demo: 'https://taskapp-demo.com'
+      github: 'https://github.com/Jaan-Mustafa/Exchange'
     },
     featured: true
   },
   {
     id: 'proj-3',
-    title: 'Weather Dashboard',
-    description: 'A beautiful weather dashboard that displays current weather, forecasts, and historical data with interactive charts and maps.',
-    tags: ['React', 'D3.js', 'OpenWeather API', 'Chart.js'],
-    image: '/projects/weather.jpg',
+    title: "Rubik's Cube Solver - Korf's IDA* Algorithm",
+    description: "Modeled a virtual Rubik's Cube (3x3) in 2 different Models/classes using standard Data Structures present in C++. Implemented and compared BFS, DFS, and IDDFS algorithms for Rubik's Cube solving, achieving sub-3-second solutions for 8-move configurations. Designed and optimized the Korf's IDA* algorithm implementation, solving complex 13-move configurations in under 10 seconds with 95% efficiency improvement over basic search methods.",
+    tags: ['C++', 'Algorithms', 'Data Structures', 'IDA*', 'BFS', 'DFS'],
     links: {
-      github: 'https://github.com/yourusername/weather',
-      demo: 'https://weather-demo.com'
+      github: 'https://github.com/Jaan-Mustafa/Rubiks-Cube-Solver'
     },
-    featured: false
-  },
-  {
-    id: 'proj-4',
-    title: 'Blog Platform',
-    description: 'A modern blogging platform with markdown support, syntax highlighting, and SEO optimization.',
-    tags: ['Next.js', 'MDX', 'Tailwind CSS', 'Vercel'],
-    image: '/projects/blog.jpg',
-    links: {
-      github: 'https://github.com/yourusername/blog',
-      article: 'https://yourblog.com/building-blog-platform'
-    },
-    featured: false
-  },
-  {
-    id: 'proj-5',
-    title: 'Portfolio Generator',
-    description: 'An open-source tool to generate beautiful portfolio websites from JSON configuration files.',
-    tags: ['React', 'TypeScript', 'Vite', 'CSS Modules'],
-    links: {
-      github: 'https://github.com/yourusername/portfolio-generator'
-    },
-    featured: false
-  },
-  {
-    id: 'proj-6',
-    title: 'API Monitoring Tool',
-    description: 'A real-time API monitoring and analytics tool with alerting capabilities and performance metrics.',
-    tags: ['Node.js', 'Express', 'PostgreSQL', 'Redis', 'Docker'],
-    links: {
-      github: 'https://github.com/yourusername/api-monitor'
-    },
-    featured: false
+    featured: true
   }
 ];

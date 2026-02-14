@@ -13,6 +13,8 @@ dist
 dist-ssr
 *.local
 
+CLAUDE.md
+
 # GitHub Pages deployment cache
 .gh-pages-cache
 

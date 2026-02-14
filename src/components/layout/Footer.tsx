@@ -1,4 +1,3 @@
-import { contactData } from '../../data/contact';
 import './Footer.css';
 
 const Footer = () => {
