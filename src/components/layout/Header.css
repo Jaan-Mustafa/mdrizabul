@@ -46,7 +46,7 @@
   margin: 0;
 }
 
-.header__nav-link {
+.nav-link {
   color: var(--color-text-secondary);
   text-decoration: none;
   font-size: var(--text-sm);
@@ -56,7 +56,7 @@
   transition: color var(--transition-normal);
 }
 
-.header__nav-link:hover {
+.nav-link:hover {
   color: var(--color-text-primary);
   text-decoration: none;
 }
