@@ -21,7 +21,7 @@ const Header = () => {
     { id: 'experience', label: 'Experience', path: '/experience' },
     { id: 'projects', label: 'Projects', path: '/projects' },
     { id: 'blog', label: 'Blogger', path: '/blog' },
-    { id: 'contact', label: 'Contacts-for-pc', path: '/contact' }
+    { id: 'contact', label: 'Contacts-for', path: '/contact' }
   ];
 
   const handleNavClick = () => {
