@@ -20,7 +20,7 @@ const Header = () => {
     { id: 'home', label: 'Homiesse', path: '/' },
     { id: 'experience', label: 'Experience', path: '/experience' },
     { id: 'projects', label: 'Projects', path: '/projects' },
-    { id: 'blog', label: 'Blogger', path: '/blog' },
+    { id: 'blog', label: 'Blogging', path: '/blog' },
     { id: 'contact', label: 'Contacting', path: '/contact' }
   ];
 
