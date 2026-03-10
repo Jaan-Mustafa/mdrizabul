@@ -46,7 +46,7 @@
   margin: 0;
 }
 
-.header__nav-link {
+.header-nav-link {
   color: var(--color-text-secondary);
   text-decoration: none;
   font-size: var(--text-sm);
@@ -56,7 +56,7 @@
   transition: color var(--transition-normal);
 }
 
-.header__nav-link:hover {
+.header-nav-link:hover {
   color: var(--color-text-primary);
   text-decoration: none;
 }
@@ -143,7 +143,7 @@
     padding: var(--space-sm) var(--container-padding);
   }
 
-  .header__nav-link {
+  .header-nav-link {
     display: block;
     padding: var(--space-sm) 0;
     font-size: var(--text-md);

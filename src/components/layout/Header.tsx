@@ -46,7 +46,7 @@ const Header = () => {
                 <li key={item.id} className="header__nav-item">
                   <Link
                     to={item.path}
-                    className={`header__nav-link ${isActive(item.path) ? 'header__nav-link--active' : ''}`}
+                    className={`header-nav-link ${isActive(item.path) ? 'header__nav-link--active' : ''}`}
                     onClick={handleNavClick}
                   >
                     {item.label}
