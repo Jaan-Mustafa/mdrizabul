@@ -21,7 +21,7 @@ const Header = () => {
     { id: 'experience', label: 'Experience', path: '/experience' },
     { id: 'projects', label: 'Projects', path: '/projects' },
     { id: 'blog', label: 'Blogging', path: '/blog' },
-    { id: 'contact', label: 'Contacts', path: '/contact' }
+    { id: 'contact', label: 'Contacting', path: '/contact' }
   ];
 
   const handleNavClick = () => {
